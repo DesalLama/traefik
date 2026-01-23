@@ -325,7 +325,7 @@ func (fa *forwardAuth) redirectURL(forwardResponse *http.Response) (*url.URL, er
 }
 
 // buildSigninURL constructs the signin URL by substituting nginx-compatible variables.
-// Supported variables: $scheme, $host, $request_uri, $escaped_request_uri
+// Supported variables: $scheme, $host, $request_uri, $escaped_request_uri.
 func (fa *forwardAuth) buildSigninURL(req *http.Request) string {
 	signinURL := fa.authSigninURL
 
